@@ -1,0 +1,96 @@
+:root {
+    --accent-color: #ec6e70;
+}
+
+.txt_bold {
+    font-weight: bold;
+}
+.txt_italic {
+    font-style: italic;
+}
+
+.btn-games {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 15px 75px;
+    border-radius: 100px;
+    position: absolute;
+    top: 65%;
+    left: 57%;
+    text-decoration: none;
+    font-family: Jua;
+    font-size: 32px;
+    transform-origin: center;
+}
+
+.btn-games:hover {
+    transform: scale(1.1);
+    transition: 0.15s;
+    background-color: var(--secondary-color);
+    border: solid var(--accent-color) 8px;
+    color: var(--accent-color);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-4deg) translateY(-30%);
+    scale: 70%;
+}
+
+.hero-logo {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    transform: translate(-70%, 60%) rotate(-10deg);
+    z-index: 99;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+.hero-header {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    font-family: var(--mbm-main-font);
+    font-size: 54px;
+}
+
+.hero-txt {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-family: SUSE;
+    font-size: 27px;
+    text-align: justify;
+    width: 50%;
+}
+
+.hero-art {
+    position: absolute;
+}
+
+.rightImg {
+    top: 30%;
+    right: -20%;
+}
+
+.leftImg {
+    top: 40%;
+    left: -40%;
+}
+
+/*Scale the height of the splash art based on the screen height, to make sure the content is always centered*/
+.splash-img {
+    object-fit: cover;
+    object-position: 0 75%;
+
+    height: 50vh;
+    width: 100%;
+
+}
