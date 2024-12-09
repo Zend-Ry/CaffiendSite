@@ -1,0 +1,67 @@
+:root, body {
+  background: var(--main-accent-colour);
+  margin: 0;
+
+  --colour-primary: #f2f2e4;
+  --font-primary: #2b2b2b;
+
+  --main-accent-colour: #ec6e70;
+  --secondary-accent-colour: #ffc519;
+
+  --drop-shadow-colour: #1e2026;
+
+  scroll-behavior: smooth;
+
+  --Website: #5fbe86;
+  --LinkedIn: #0077b5;
+  --Instagram: #e4405f;
+  --ArtStation: #13aff0;
+  --GitHub: #6e5494;
+
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Jua", sans-serif;
+}
+
+p {
+  max-width: 800px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: right;
+
+  margin: 0 auto;
+}
+
+.primary-separator {
+  position: relative;
+  background: repeating-conic-gradient(var(--secondary-accent-colour) 0% 25%, var(--main-accent-colour) 0% 50%) 50% / 50px 50px;
+  border-top: var(--font-primary) 5px solid;
+  border-bottom: var(--font-primary) 5px solid;
+  height: 100px;
+  z-index: 10;
+}
+
+.secondary-separator {
+  position: relative;
+  background: repeating-conic-gradient(var(--colour-primary) 0% 25%, var(--main-accent-colour) 0% 50%) 50% / 50px 50px;
+  border-top: var(--font-primary) 5px solid;
+  border-bottom: var(--font-primary) 5px solid;
+  height: 100px;
+  z-index: 10;
+}
+
+.container, #landing, #about-us, #games, #gallery, #team{
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  height: 600px;
+  background: var(--colour-primary);
+}

@@ -1,0 +1,36 @@
+<!-- Debug CSS -->
+
+<!-- Borders -->
+
+.dbg_border_red {
+  border: 1px solid red;
+}
+.dbg_border_green {
+  border: 1px solid green;
+}
+.dbg_border_blue {
+  border: 1px solid blue;
+}
+.dbg_border_yellow {
+  border: 1px solid yellow;
+}
+.dbg_border_purple {
+  border: 1px solid purple;
+}
+.dbg_border_orange {
+  border: 1px solid orange;
+}
+.dbg_border_pink {
+  border: 1px solid pink;
+}
+.dbg_border_brown {
+  border: 1px solid brown;
+}
+.dbg_border_black {
+  border: 1px solid black;
+}
+.dbg_border_white {
+  border: 1px solid white;
+}
+
+<!-- Backgrounds -->

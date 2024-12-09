@@ -1,0 +1,39 @@
+@keyframes smooth-rocking {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-easeOutElastic {
+  0% {
+    transform: rotate(0deg);
+  }
+  16% {
+    transform: rotate(-8deg);
+  }
+  28% {
+    transform: rotate(3.12deg);
+  }
+  44% {
+    transform: rotate(-1.2deg);
+  }
+  59% {
+    transform: rotate(0.48deg);
+  }
+  73% {
+    transform: rotate(-0.24deg);
+  }
+  88% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

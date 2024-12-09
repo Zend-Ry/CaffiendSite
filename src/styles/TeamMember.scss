@@ -1,0 +1,106 @@
+.team-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid var(--main-accent-colour);
+}
+
+.team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 50px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+
+  img {
+    border: var(--main-accent-colour) 15px solid;
+    border-radius: 30px;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-40px);
+  }
+
+  a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#team-contacts, #team-artists, #team-programmers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.info {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background: var(--secondary-accent-colour);
+  padding: 0 25px;
+  border-radius: 100px;
+  transform: translateY(-40px);
+}
+
+.Website, .LinkedIn, .Instagram, .ArtStation, .GitHub {
+  display: flex;
+  font-size: 30px;
+  margin: 10px;
+  background: #181719;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--drop-shadow-colour);
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    background: var(--font-secondary);
+  }
+}
+
+.Website {
+  color: var(--Website);
+
+  &:hover {
+    border: 5px solid var(--Website);
+  }
+}
+.LinkedIn {
+  color: var(--LinkedIn);
+
+  &:hover {
+    border: 5px solid var(--LinkedIn);
+  }
+}
+.Instagram {
+  color: var(--Instagram);
+
+  &:hover {
+    border: 5px solid var(--Instagram);
+  }
+}
+.ArtStation {
+  color: var(--ArtStation);
+
+  &:hover {
+    border: 5px solid var(--ArtStation);
+  }
+}
+.GitHub {
+  color: var(--GitHub);
+
+  &:hover {
+    border: 5px solid var(--GitHub);
+  }
+}

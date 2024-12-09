@@ -1,0 +1,297 @@
+:root, body {
+  background: var(--main-accent-colour);
+  margin: 0;
+  --colour-primary: #f2f2e4;
+  --font-primary: #2b2b2b;
+  --main-accent-colour: #ec6e70;
+  --secondary-accent-colour: #ffc519;
+  --drop-shadow-colour: #1e2026;
+  scroll-behavior: smooth;
+  --Website: #5fbe86;
+  --LinkedIn: #0077b5;
+  --Instagram: #e4405f;
+  --ArtStation: #13aff0;
+  --GitHub: #6e5494;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Jua", sans-serif;
+}
+
+p {
+  max-width: 800px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: right;
+  margin: 0 auto;
+}
+
+.primary-separator {
+  position: relative;
+  background: repeating-conic-gradient(var(--secondary-accent-colour) 0% 25%, var(--main-accent-colour) 0% 50%) 50%/50px 50px;
+  border-top: var(--font-primary) 5px solid;
+  border-bottom: var(--font-primary) 5px solid;
+  height: 100px;
+  z-index: 10;
+}
+
+.secondary-separator {
+  position: relative;
+  background: repeating-conic-gradient(var(--colour-primary) 0% 25%, var(--main-accent-colour) 0% 50%) 50%/50px 50px;
+  border-top: var(--font-primary) 5px solid;
+  border-bottom: var(--font-primary) 5px solid;
+  height: 100px;
+  z-index: 10;
+}
+
+.container, #landing, #about-us, #games, #gallery, #team {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 600px;
+  background: var(--colour-primary);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 1280px;
+}
+
+.hf-sizing {
+  width: 100%;
+  height: 150px;
+}
+
+.header, #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colour-primary);
+}
+.header p, #footer p {
+  padding: 0;
+  font-size: 0.85rem;
+}
+.header .copyright, #footer .copyright {
+  padding-bottom: 25px;
+}
+.header .footer-links, #footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav .nav-link {
+  font-family: "Jua", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--font-primary);
+  background: var(--colour-primary);
+  transition: 0.2s;
+  padding: 5px 2vw;
+  margin: 0.25rem 0.5rem;
+  border: var(--secondary-accent-colour) 10px solid;
+  border-radius: 100px;
+}
+#nav .nav-link:hover {
+  cursor: pointer;
+  transform: scale(1.125);
+}
+
+#navigation {
+  z-index: 10;
+  background: var(--main-accent-colour);
+}
+#navigation .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 150px;
+}
+#navigation #logo {
+  margin-left: 150px;
+  width: 300px;
+}
+
+#landing {
+  height: 625px;
+}
+#landing #hero-video {
+  position: absolute;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateY(-237px);
+  pointer-events: none;
+}
+#landing #hero-background {
+  position: absolute;
+  width: 900px;
+  border-radius: 25px;
+}
+#landing #hero-logo {
+  position: absolute;
+  transform: translate(-70%, -60%) rotateZ(-9deg);
+  width: 450px;
+  transition: 0.2s;
+}
+#landing #hero-logo:hover {
+  transform: translate(-70%, -60%) rotateZ(-9deg) scale(1.025);
+}
+#landing #hero-art-left, #landing #hero-art-right {
+  position: absolute;
+  transition: 0.25s;
+  z-index: 20;
+}
+#landing #hero-art-left:hover, #landing #hero-art-right:hover {
+  scale: 1.025;
+}
+#landing #hero-art-left {
+  animation: rotate-easeOutElastic 3s infinite;
+  animation-direction: reverse;
+  margin-right: 1010px;
+  margin-top: 350px;
+  width: 500px;
+}
+#landing #hero-art-right {
+  animation: smooth-rocking 5s infinite;
+  margin-left: 800px;
+  margin-top: 275px;
+  width: 325px;
+}
+#landing .inline-buttons {
+  position: relative;
+  display: flex;
+  transform: translateY(50%);
+}
+#landing .inline-buttons .button {
+  background: var(--main-accent-colour);
+  color: var(--colour-primary);
+  font-family: "Jua", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem;
+  margin: 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+#landing .inline-buttons .button:hover {
+  cursor: pointer;
+  transform: scale(1.125);
+}
+#landing p {
+  width: 600px;
+}
+#landing p span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-right: 3px;
+}
+#landing h1 {
+  padding-top: 5rem;
+}
+#landing p, #landing h1, #landing a {
+  z-index: 1;
+  margin-left: 50px;
+}
+#landing .content {
+  transform: rotateZ(-3deg);
+}
+
+#splash {
+  background: var(--colour-primary);
+  height: 900px !important;
+}
+#splash #art, #splash #art-dino {
+  object-fit: cover;
+  object-position: 0 75%;
+  height: 900px;
+  width: 100%;
+}
+#splash #art-dino {
+  position: relative;
+  z-index: 20;
+  transform-origin: bottom;
+  transform: translateY(-900px) scale(1.85);
+}
+#splash #art-dino.smaller {
+  transform: translateY(-900px) scale(1);
+}
+#splash #credit {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  color: var(--colour-primary);
+  font-family: "SUSE", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  right: 0;
+  padding: 5px 10px;
+  z-index: 20;
+  transform: translate(-10%, -950px);
+}
+
+#about-us p {
+  padding-top: 1rem;
+}
+#about-us #coffee-stain {
+  position: absolute;
+  left: 0;
+  transform: translate(-100px, 90px) rotateZ(-80deg);
+  width: 400px;
+  height: 400px;
+  opacity: 60%;
+}
+
+#games #games-coffee-stain {
+  position: absolute;
+  right: 0;
+  transform: translate(100px, 90px) rotateZ(-80deg);
+  width: 600px;
+  height: 600px;
+  opacity: 50%;
+}
+#games #download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#games #download .button {
+  border: var(--secondary-accent-colour) 10px solid;
+  color: var(--font-primary);
+  font-family: "Jua", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.25rem 2rem;
+  margin: 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+#games #download .button:hover {
+  cursor: pointer;
+  transform: scale(1.125);
+}
+#games #download .icon {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=landing.css.map */

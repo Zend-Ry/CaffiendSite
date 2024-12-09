@@ -1,662 +1,161 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:description" content="Site for Algonquin College Game Dev capstone project.">
     <title>Caffiend Games</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light only"/>
-    <meta name="description" content="Site for Algonquin College Game Dev capstone project."/>
-    <meta property="og:site_name" content="Caffiend Games"/>
-    <meta property="og:title" content="Caffiend Games"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Site for Algonquin College Game Dev capstone project."/>
-    <link rel="icon" href="assets/img/DinoStare1.png" sizes="any"/>
-
-    <link rel="stylesheet" href="assets/main.css"/>
-    <link rel="stylesheet" href="StyleSheets/NavStyles.css"/>
-    <link rel="stylesheet" href="StyleSheets/Landing.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jua&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Koulen&family=SUSE:wght@100..800&display=swap"
           rel="stylesheet">
 
-    <script src="Scripts/NavScripts.js"></script>
+    <link rel="stylesheet" href="./src/styles/debug.css"/>
+    <link rel="stylesheet" href="./src/styles/landing.scss">
+    <link rel="stylesheet" href="./src/styles/tailwind.output.css">
+    <link rel="stylesheet" href="./src/styles/animations.scss">
+
+    <link rel="icon" href="./src/assets/favicon.webp" sizes="any">
+
+    <script src="https://kit.fontawesome.com/2f48ce0506.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<button id="scroll-to-top" onclick="scrollToTop()"></button>
+<div id="navigation">
+</div>
 
-<div id="wrapper">
-    <div id="main">
-        <div class="inner">
-            <!-- Navigation Mobile -->
-            <div id="navMobile" class="container columns full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div>
-                            <div id="image21" class="style3 image">
-                                <span class="frame"><img src="assets/img/TeamLogoMobile.png" alt=""/></span>
-                            </div>
-                        </div>
-                        <div>
-                            <div id="embed03">
-                                <nav>
-                                    <input type="checkbox" id="menu-toggle" onclick="checkState(this)"/>
-                                    <label for="menu-toggle" class="hamburger">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </label>
-                                    <ul class="menu">
-                                        <li><a href="#about" onclick="checkState(this)">ABOUT US</a></li>
-                                        <li><a href="#games" onclick="checkState(this)">GAMES</a></li>
-                                        <li><a href="#download" onclick="checkState(this)">DOWNLOAD</a></li>
-                                        <li><a href="#gallery" onclick="checkState(this)">GALLERY</a></li>
-                                        <li><a href="#team" onclick="checkState(this)">TEAM</a></li>
-                                    </ul>
-                                </nav>
-                                <div class="content"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="primary-separator"></div>
+<div id="landing">
+    <div class="container">
+        <iframe id="hero-video"
+                src="https://www.youtube.com/embed/fbVlGyXO0ow?si=KOx7bFRQi603bXe-&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=fbVlGyXO0ow&modestbranding=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="content">
+            <img id="hero-background" src="src/assets/Hero-Sticker.png" alt="90s style diner sticker">
+            <img id="hero-logo" src="src/assets/Logo-PantryRaid.svg" alt="Pantry Raid logo">
+            <h1>Check out our current project!</h1>
+            <p><span>Pantry Raid</span> is a rogue lite dungeon-crawler with cooking elements. Players traverse the
+                pantry, defeating food-themed enemies to make meals to improve your character during the course of the
+                game.</p>
+            <div class="inline-buttons">
+                <a href="#games" class="button">Read More!</a>
+                <a href="#download-scroll-point" class="button">Download Now!</a>
             </div>
-            <!-- Navigation Desktop -->
-            <div id="navDesktop" class="container columns full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div>
-                            <div id="image01" class="image">
-                                <a href="#" class="frame"><img src="assets/img/TeamLogoDesktop.png" alt=""/></a>
-                            </div>
-                        </div>
-                        <div>
-                            <ul id="buttons01" class="style1 buttons">
-                                <li>
-                                    <a href="#about" class="button n01">about us</a>
-                                </li>
-                                <li>
-                                    <a href="#games" class="button n02">games</a>
-                                </li>
-                                <li>
-                                    <a href="#download" class="button n05">Download</a>
-                                </li>
-                                <li>
-                                    <a href="#gallery" class="button n03">gallery</a>
-                                </li>
-                                <li>
-                                    <a href="#team" class="button n04">team</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img id="hero-art-left" src="src/assets/Misc-DinoWhack.png" alt="Dino, main character"/>
+            <img id="hero-art-right" src="src/assets/Misc-DinoCoffee.png" alt="Pantry Raid logo"/>
+        </div>
+    </div>
+</div>
 
-            <!-- Yellow Separator -->
-            <div id="yellowSpacer1" class="mobile-spacing container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
+<div class="secondary-separator"></div>
+<div id="about-us">
+    <img id="coffee-stain" src="src/assets/Misc-CoffeeStain-Circle.png" alt="vector drawing of a mug coffee stain">
+    <div class="container">
+        <div class="pseudo-absolute">
+        </div>
+        <div class="content">
+            <h1>About Us</h1>
+            <img alt="Image of the Caffiend team" src="./src/assets/team-photo.jpg"/>
+            <p>
+                Caffiend is an indie game development team formed within the creative environment of Algonquin College
+                as part of their final project. Our team of 11 passionate members is dedicated to creating a unique
+                gaming experience that reflects our collective skills and vision. The name reflects our energy and
+                determination, embodying the spirit that drives our work as aspiring developers.
+            </p>
+            <p>
+                Collaboration and continuous learning are at the heart of our work. We’ve built a website to showcase
+                our progress, share our creative journey, and connect with the gaming community. This platform is more
+                than just a project—it’s a testament to our hard work and the culmination of everything we’ve learned
+                throughout our time at Algonquin College.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="secondary-separator"></div>
+<div id="splash">
+    <img id="art" src="src/assets/Hero-Full.png"
+         alt="drawn cover art depicting Dino, main character. With flavour waves behind"/>
+    <img id="art-dino" src="./src/assets/Hero-Dino.png" alt="Dino, main character"/>
+    <a href="#jada" id="credit">&#127912; Jada Gordon</a>
+</div>
+
+<div class="secondary-separator"></div>
+<div id="games">
+    <img id="games-coffee-stain" src="src/assets/Misc-CoffeeStain-Splatter.png"
+         alt="vector drawing of a mug coffee stain">
+    <div class="container">
+        <div class="content">
+
+            <div id="download-scroll-point"></div>
+            <h1>Want to Play?</h1>
+            <p>Our game isn't ready yet, but when it is you can</p>
+            <p>download our game using the links below.</p>
+            <div id="download">
+                <div class="button">
+                    <img class="icon" alt="ico" src="./src/assets/"/>
+                    <a href="https://www.google.com" target="_blank">ITCH.IO</a>
                 </div>
-            </div>
-            <!-- Hero -->
-            <div id="hero" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                            <div class="hero-content">
-                                <img src="assets/img/Logo_PantryRaid.svg" alt="logo" class="hero-logo">
-                                <div class="hero-container">
-                                    <img src="assets/img/DinerCardSticker.png" alt="background">
-                                    <h1 class="hero-header">Check out our current project!</h1>
-                                    <p class="hero-txt"><span class="txt_bold txt_italic">Pantry Raid</span> is a rogue
-                                        lite dungeon-crawler with cooking elements. Players traverse the pantry,
-                                        defeating food-themed enemies to make meals to improve your character during the
-                                        course of the game.</p>
-                                    <a href="#games" class="btn-games">Read more!</a>
-                                    <img src="assets/img/Misc_DinoCoffee.png" alt="background"
-                                         class="hero-art rightImg">
-                                    <img src="assets/img/Misc_DinoWhack.png" alt="background" class="hero-art leftImg">
-                                </div>
-                            </div>
-                    </div>
+                <div class="button">
+                    <img class="icon" alt="ico" src="./src/assets/"/>
+                    <a href="https://www.google.com" target="_blank">STEAM</a>
                 </div>
-            </div>
-            <!-- Red Separator -->
-            <div id="redSpacer1" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
+                <div class="button">
+                    <img class="icon" alt="ico" src="./src/assets/"/>
+                    <a href="https://www.google.com" target="_blank">GAMEJOLT</a>
                 </div>
-            </div>
-            <!-- Splash -->
-            <div id="splash" class="container default full screen">
-                <img src="assets/img/CoverArt.png" alt="Cover Art" class="splash-img"/>
-            </div>
-            <!-- Red Separator -->
-            <div id="redSpacer2" data-scroll-id="about" data-scroll-behavior="default" data-scroll-offset="0"
-                 data-scroll-speed="3" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
-            <!-- About Us -->
-            <div id="about" class="container default full">
-                <div class="wrapper">
-                    <div class="inner">
-                        <h2 id="text12" class="style1">about us</h2>
-                        <div id="image03" class="image">
-                            <span class="frame"><img src="assets/img/image03.jpg" alt=""/></span>
-                        </div>
-                        <p id="text05" class="style2"><span class="p">Caffiend is an indie game development team formed within the creative environment of Algonquin College as part of their final project. Our team of 11 passionate members is dedicated to creating a unique gaming experience that reflects our collective skills and vision. The name reflects our energy and determination, embodying the spirit that drives our work as aspiring developers.</span><span
-                                class="p">Collaboration and continuous learning are at the heart of our work. We’ve built a website to showcase our progress, share our creative journey, and connect with the gaming community. This platform is more than just a project—it’s a testament to our hard work and the culmination of everything we’ve learned throughout our time at Algonquin College.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Red Separator -->
-            <div id="redSpacer3" data-scroll-id="games" data-scroll-behavior="default" data-scroll-offset="0"
-                 data-scroll-speed="3" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
-            <!-- USP Logo and Paragraph -->
-            <div id="uspLogo" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div id="image10" class="image">
-                            <span class="frame"><img src="assets/img/PantryLogo.svg" alt=""/></span>
-                        </div>
-                        <p id="text20" class="style2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                            vitae dictum lectus. Proin sed sagittis erat. Nullam eros neque, laoreet ullamcorper nunc
-                            eget, mollis facilisis velit. Donec eget justo in nisl consectetur imperdiet non sed lacus.
-                            Aliquam vitae dignissim ante. Curabitur quam erat, accumsan non ipsum tristique, dictum
-                            tincidunt diam. Morbi magna mauris, varius sed turpis ut, bibendum viverra felis. Mauris
-                            suscipit, sapien sit amet elementum rhoncus, dui felis aliquet nisl, in dignissim nulla dui
-                            ut velit.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- USP1 -->
-            <div id="usp1" class="container columns full">
-                <div class="wrapper">
-                    <div class="inner" data-reorder="0,1">
-                        <div>
-                            <div id="image09" class="image">
-                                <span class="frame"><img src="assets/img/image09.jpg" alt=""/></span>
-                            </div>
-                        </div>
-                        <div>
-                            <p id="text10" class="style3">Header Text</p>
-                            <p id="text11" class="style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vivamus vitae dictum lectus. Proin sed sagittis erat. Nullam eros neque, laoreet
-                                ullamcorper nunc eget, mollis facilisis velit. Donec eget justo in nisl consectetur
-                                imperdiet non sed lacus. Aliquam vitae dignissim ante. Curabitur quam erat, accumsan non
-                                ipsum tristique, dictum tincidunt diam. Morbi magna mauris, varius sed turpis ut,
-                                bibendum viverra felis. Mauris suscipit, sapien sit amet elementum rhoncus, dui felis
-                                aliquet nisl, in dignissim nulla dui ut velit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- USP2 -->
-            <div id="usp2" class="container columns full">
-                <div class="wrapper">
-                    <div class="inner" data-reorder="1,0">
-                        <div>
-                            <p id="text08" class="style3">Header Text</p>
-                            <p id="text09" class="style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vivamus vitae dictum lectus. Proin sed sagittis erat. Nullam eros neque, laoreet
-                                ullamcorper nunc eget, mollis facilisis velit. Donec eget justo in nisl consectetur
-                                imperdiet non sed lacus. Aliquam vitae dignissim ante. Curabitur quam erat, accumsan non
-                                ipsum tristique, dictum tincidunt diam. Morbi magna mauris, varius sed turpis ut,
-                                bibendum viverra felis. Mauris suscipit, sapien sit amet elementum rhoncus, dui felis
-                                aliquet nisl, in dignissim nulla dui ut velit.</p>
-                        </div>
-                        <div>
-                            <div id="image06" class="image">
-                                <span class="frame"><img src="assets/img/image06.jpg" alt=""/></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- USP3 -->
-            <div id="usp3" class="container columns full">
-                <div class="wrapper">
-                    <div class="inner" data-reorder="0,1">
-                        <div>
-                            <div id="image22" class="image">
-                                <span class="frame"><img src="assets/img/image22.jpg" alt=""/></span>
-                            </div>
-                        </div>
-                        <div>
-                            <p id="text32" class="style3">Header Text</p>
-                            <p id="text33" class="style4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vivamus vitae dictum lectus. Proin sed sagittis erat. Nullam eros neque, laoreet
-                                ullamcorper nunc eget, mollis facilisis velit. Donec eget justo in nisl consectetur
-                                imperdiet non sed lacus. Aliquam vitae dignissim ante. Curabitur quam erat, accumsan non
-                                ipsum tristique, dictum tincidunt diam. Morbi magna mauris, varius sed turpis ut,
-                                bibendum viverra felis. Mauris suscipit, sapien sit amet elementum rhoncus, dui felis
-                                aliquet nisl, in dignissim nulla dui ut velit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Download -->
-            <div id="download" data-scroll-id="download" data-scroll-behavior="default" data-scroll-offset="0"
-                 data-scroll-speed="3" class="container default">
-                <div class="wrapper">
-                    <div class="inner">
-                        <h2 id="text25" class="style1">Want to play?</h2>
-                        <p id="text26" class="style9"><span class="p">Our game isn&#39;t ready yet, but when it is you can<br/>download our game using the links below.</span>
-                        </p>
-                        <ul id="buttons02" class="style3 buttons">
-                            <li>
-                                <a href="#" class="button n01">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">Itch.io</title>
-                                        <use xlink:href="assets/icons.svg#itchio"></use>
-                                    </svg>
-                                    <span class="label">Itch.io</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="button n02">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">Steam</title>
-                                        <use xlink:href="assets/icons.svg#steam"></use>
-                                    </svg>
-                                    <span class="label">Steam</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="button n03">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">Game Jolt</title>
-                                        <use xlink:href="assets/icons.svg#gamejolt"></use>
-                                    </svg>
-                                    <span class="label">GameJolt</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Red Separator -->
-            <div id="redSpacer4" data-scroll-id="gallery" data-scroll-behavior="default" data-scroll-offset="0"
-                 data-scroll-speed="3" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
-            <!-- Gallery -->
-            <div id="gallery" class="container default">
-                <div class="wrapper">
-                    <div class="inner">
-                        <h2 id="text04" class="style1">gallery</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Red Separator -->
-            <div id="redSpacer5" data-scroll-id="team" data-scroll-behavior="default" data-scroll-offset="0"
-                 data-scroll-speed="3" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
-            <!--#region Team-->
-            <h2 id="text03" class="style1">Meet the Team</h2>
-            <div id="container23" class="container columns">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div>
-                            <div id="image04" class="style1 image">
-                                <span class="frame"><img src="assets/img/image04.jpg" alt=""/></span>
-                            </div>
-                            <p id="text13" class="style5"><span class="p"><strong>Toby Pinhey</strong><br/>artist</span>
-                            </p>
-                            <ul id="icons01" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="https://www.linkedin.com/in/toby-pinhey-567272339/">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://www.artstation.com/tobsyturvy">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">ArtStation</title>
-                                            <use xlink:href="assets/icons.svg#artstation"></use>
-                                        </svg>
-                                        <span class="label">ArtStation</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image05" class="style1 image">
-                                <span class="frame"><img src="assets/img/image05.jpg" alt=""/></span>
-                            </div>
-                            <p id="text14" class="style5"><span class="p"><strong>Chris Cowan</strong><br/>artist</span>
-                            </p>
-                            <ul id="icons02" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">ArtStation</title>
-                                            <use xlink:href="assets/icons.svg#artstation"></use>
-                                        </svg>
-                                        <span class="label">ArtStation</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image07" class="style1 image">
-                                <span class="frame"><img src="assets/img/image07.jpg" alt=""/></span>
-                            </div>
-                            <p id="text19" class="style5"><span class="p"><strong>Jada Gordon</strong><br/>artist</span>
-                            </p>
-                            <ul id="icons03" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://www.instagram.com/ennajada?igsh=MWI4MHh2N3NkdXA1bg==">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">Instagram</title>
-                                            <use xlink:href="assets/icons.svg#instagram"></use>
-                                        </svg>
-                                        <span class="label">Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n03" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">ArtStation</title>
-                                            <use xlink:href="assets/icons.svg#artstation"></use>
-                                        </svg>
-                                        <span class="label">ArtStation</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image19" class="style1 image">
-                                <span class="frame"><img src="assets/img/image19.jpg" alt=""/></span>
-                            </div>
-                            <p id="text24" class="style5"><span class="p"><strong>Roaa Almadi</strong><br/>artist</span>
-                            </p>
-                            <ul id="icons04" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="https://www.linkedin.com/in/roaa-almadi">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://www.instagram.com/Roaa.Almadi">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">Instagram</title>
-                                            <use xlink:href="assets/icons.svg#instagram"></use>
-                                        </svg>
-                                        <span class="label">Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n03" href="https://www.artstation.com/roaa-072/profile">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">ArtStation</title>
-                                            <use xlink:href="assets/icons.svg#artstation"></use>
-                                        </svg>
-                                        <span class="label">ArtStation</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="container02" class="container default">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div id="image15" class="style1 image">
-                            <span class="frame"><img src="assets/img/image15.jpg" alt=""/></span>
-                        </div>
-                        <p id="text16" class="style5"><span class="p"><strong>Riley Daigle</strong><br/>designer</span>
-                        </p>
-                        <ul id="icons08" class="style1 icons">
-                            <li>
-                                <a class="n01" href="https://rileydaigle.com/">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">Globe</title>
-                                        <use xlink:href="assets/icons.svg#globe"></use>
-                                    </svg>
-                                    <span class="label">Globe</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="n02" href="https://www.linkedin.com/in/riley-daigle-1799bb251/">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                        <use xlink:href="assets/icons.svg#linkedin"></use>
-                                    </svg>
-                                    <span class="label">LinkedIn</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="n03" href="https://www.instagram.com/riley.cc.daigle/">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">Instagram</title>
-                                        <use xlink:href="assets/icons.svg#instagram"></use>
-                                    </svg>
-                                    <span class="label">Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="n04" href="https://github.com/Zend-Ry">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                        <use xlink:href="assets/icons.svg#github"></use>
-                                    </svg>
-                                    <span class="label">GitHub</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="n05" href="https://www.artstation.com/sndnoodles4">
-                                    <svg aria-labelledby="icon-title"><title id="icon-title">ArtStation</title>
-                                        <use xlink:href="assets/icons.svg#artstation"></use>
-                                    </svg>
-                                    <span class="label">ArtStation</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="container03" class="container columns">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div>
-                            <div id="image12" class="style1 image">
-                                <span class="frame"><img src="assets/img/image12.jpg" alt=""/></span>
-                            </div>
-                            <p id="text15" class="style5"><span
-                                    class="p"><strong>Ari Hawes</strong><br/>programmer</span></p>
-                            <ul id="icons05" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://github.com/wholivesinapineappleunderthesea">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image13" class="style1 image">
-                                <span class="frame"><img src="assets/img/image13.jpg" alt=""/></span>
-                            </div>
-                            <p id="text17"><span class="p"><strong>Mason Frazer</strong><br/>programmer</span></p>
-                            <ul id="icons06" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://github.com/Ph0don">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image14" class="style1 image">
-                                <span class="frame"><img src="assets/img/image14.jpg" alt=""/></span>
-                            </div>
-                            <p id="text18" class="style5"><span
-                                    class="p"><strong>James Lilley</strong><br/>programmer</span></p>
-                            <ul id="icons07" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="https://www.linkedin.com/in/james-lilley-20726a339/">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://github.com/L0043">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="container19" class="container columns">
-                <div class="wrapper">
-                    <div class="inner">
-                        <div>
-                            <div id="image17" class="style1 image">
-                                <span class="frame"><img src="assets/img/image17.jpg" alt=""/></span>
-                            </div>
-                            <p id="text28" class="style5"><span
-                                    class="p"><strong>Zoe Sharp</strong><br/>programmer</span></p>
-                            <ul id="icons28" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="https://github.com/Zobotical">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image16" class="style1 image">
-                                <span class="frame"><img src="assets/img/image16.jpg" alt=""/></span>
-                            </div>
-                            <p id="text27" class="style5"><span
-                                    class="p"><strong>Seth Gaga-A</strong><br/>programmer</span></p>
-                            <ul id="icons27" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="https://github.com/TheDarKSh0t">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <div id="image18" class="style1 image">
-                                <span class="frame"><img src="assets/img/image18.jpg" alt=""/></span>
-                            </div>
-                            <p id="text29" class="style5"><span
-                                    class="p"><strong>Ben Symons</strong><br/>programmer</span></p>
-                            <ul id="icons29" class="style1 icons">
-                                <li>
-                                    <a class="n01" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">LinkedIn</title>
-                                            <use xlink:href="assets/icons.svg#linkedin"></use>
-                                        </svg>
-                                        <span class="label">LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n02" href="#">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">Instagram</title>
-                                            <use xlink:href="assets/icons.svg#instagram"></use>
-                                        </svg>
-                                        <span class="label">Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="n03" href="https://github.com/BSymons74">
-                                        <svg aria-labelledby="icon-title"><title id="icon-title">GitHub</title>
-                                            <use xlink:href="assets/icons.svg#github"></use>
-                                        </svg>
-                                        <span class="label">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--#endregion-->
-            <!-- Yellow Separator -->
-            <div id="yellowSpacer2" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
-            <!-- Footer -->
-            <div id="footer" class="container default full screen">
-                <div class="wrapper">
-                    <div class="inner">
-                        <p id="text07" class="style8"><span class="p">© Copyright Caffiend Games 2024 All Rights Reserved.</span><span
-                                class="p">Developed and Designed by <em>Riley Daigle</em> and <em>Jada Gordon</em>.<br/>Sprites and Portraits created by <em>Chris Cowan</em>.<br/><em><a
-                                href="https://carrd.co/">Carrd.co</a></em> | <em><a
-                                href="https://www.jetbrains.com/webstorm/">Webstorm</a></em></span></p>
-                    </div>
+                <div class="button">
+                    <img class="icon" alt="ico" src="./src/assets/"/>
+                    <a href="https://www.google.com" target="_blank">GITHUB</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src="assets/main.js"></script>
+
+<div class="secondary-separator"></div>
+<div id="gallery">
+    <div class="container">
+        <div class="content">
+            <h1>Gallery</h1>
+        </div>
+    </div>
+</div>
+
+<div class="secondary-separator"></div>
+<div id="team">
+    <div class="container">
+        <div class="content">
+            <h1>Meet the Team</h1>
+            <p>Want to get in touch?</p>
+            <p>Contact through <span class="italic">LinkedIn</span> or another social down below!</p>
+
+            <script type="module" src="/src/scripts/TeamMember.tsx"></script>
+
+            <div class="team-grid">
+                <div id="team-contacts"></div>
+                <div id="team-artists"></div>
+                <div id="team-programmers"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="primary-separator"></div>
+<div id="footer" class="hf-sizing">
+    <div class="content">
+        <p class="copyright">© Copyright Caffiend Games 2024 All Rights Reserved.</p>
+        <p>Developed and Designed by Riley Daigle and Jada Gordon.</p>
+        <p class="copyright">Sprites and Portraits created by Chris Cowan.</p>
+        <p>Written in Webstorm, using TypeScript, Scss, Tailwind, and React.</p>
+    </div>
+</div>
+
+<script type="module" src="/src/scripts/landing.ts"></script>
+<script type="module" src="/src/scripts/ScaleOnScroll.ts"></script>
 </body>
 </html>
