@@ -1,6 +1,6 @@
-import '../styles/landing.css'
-
-document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
+import '../styles/debug.css';
+import '../styles/landing.scss';
+document.querySelector('#navigation').innerHTML = `
 <div id="navigation" class="hf-sizing">
     <div class="content">
             <div id="logo">
@@ -15,8 +15,7 @@ document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
             </div>
     </div>
 </div>
-`
+`;
+document.querySelector('#toggle-modes').innerHTML = `
 
-document.querySelector<HTMLDivElement>('#toggle-modes')!.innerHTML = `
-
-`
+`;

@@ -270,6 +270,9 @@ p {
   height: 600px;
   opacity: 50%;
 }
+#games #games-logo {
+  width: 600px;
+}
 #games #download {
   display: flex;
   justify-content: center;

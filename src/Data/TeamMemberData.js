@@ -1,15 +1,4 @@
-export type TeamMemberData = {
-    name: string;
-    title: string;
-    imageUrl?: string;
-    website?: string;
-    linkedin?: string;
-    instagram?: string;
-    github?: string;
-    artStation?: string;
-}
-
-export let teamMembers: TeamMemberData[] = [
+export let teamMembers = [
     {
         name: "Toby Pinhey",
         title: "Art Contact",
