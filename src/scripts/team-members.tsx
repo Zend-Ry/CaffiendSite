@@ -1,10 +1,10 @@
 import {createElement} from 'react';
 import ReactDOM from 'react-dom/client';
-import {TeamMemberData, teamMembers} from "../Data/TeamMemberData.ts";
+import {TeamMemberData, teamMembers} from "../Data/team-member-data.ts";
 
 import '../styles/TeamMember.css';
 
-function TeamMember(props: TeamMemberData) {
+function TeamMembers(props: TeamMemberData) {
     return createElement(
         'div',
         {className: 'team-member'},
@@ -46,20 +46,20 @@ function TeamMember(props: TeamMemberData) {
 for (let i = 0; i <= 3; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
-    root.render(TeamMember(teamMembers[i]));
+    root.render(TeamMembers(teamMembers[i]));
     //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
 }
 // Artists
 for (let i = 4; i <= 6; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
-    root.render(TeamMember(teamMembers[i]));
+    root.render(TeamMembers(teamMembers[i]));
     //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
 }
 // Programmers
 for (let i = 7; i <= teamMembers.length; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
-    root.render(TeamMember(teamMembers[i]));
+    root.render(TeamMembers(teamMembers[i]));
     //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
 }
