@@ -3,8 +3,8 @@ import '../styles/landing.css'
 document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
 <div id="navigation" class="hf-sizing">
     <div class="content">
-            <div id="logo">
-                <img src="./src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
+            <div>
+                <img id="logo" src="./src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
             </div>
             <div id="nav">
                 <a class="nav-link" href="#about-us">About Us</a>

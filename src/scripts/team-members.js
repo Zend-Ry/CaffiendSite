@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 import ReactDOM from 'react-dom/client';
 import { teamMembers } from "../Data/team-member-data.ts";
-import '../styles/TeamMember.scss';
+import '../styles/team-member.scss';
 function TeamMembers(props) {
     return createElement('div', { className: 'team-member' }, createElement('img', { src: props.imageUrl, alt: "image of " + props.name }), createElement('div', { className: 'info' }, createElement('h2', null, props.name), createElement('h3', null, props.title)), createElement('div', { className: 'socials' }, props.website ? createElement('a', {
         href: props.website,
@@ -30,19 +30,19 @@ for (let i = 0; i <= 3; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
 }
 // Artists
 for (let i = 4; i <= 6; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    document.getElementById('team-artists').appendChild(teamMember); // This is not working, I don't know why
 }
 // Programmers
 for (let i = 7; i <= teamMembers.length; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    document.getElementById('team-programmers').appendChild(teamMember); // This is not working, I don't know why
 }

@@ -2,7 +2,7 @@ import {createElement} from 'react';
 import ReactDOM from 'react-dom/client';
 import {TeamMemberData, teamMembers} from "../Data/team-member-data.ts";
 
-import '../styles/TeamMember.css';
+import '../styles/team-member.css';
 
 function TeamMembers(props: TeamMemberData) {
     return createElement(

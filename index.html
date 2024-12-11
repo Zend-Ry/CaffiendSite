@@ -6,9 +6,7 @@
     <meta property="og:description" content="Site for Algonquin College Game Dev capstone project.">
     <title>Caffiend Games</title>
 
-    <link rel="stylesheet" href="src/styles/debug.css"/>
     <link rel="stylesheet" href="src/styles/landing.css">
-    <link rel="stylesheet" href="src/styles/tailwind.output.css">
     <link rel="stylesheet" href="src/styles/animations.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,27 +88,26 @@
     <div class="container">
         <div class="content">
             <img id="games-logo" src="src/assets/Logo-PantryRaid.svg" alt="Pantry Raid logo"/>
-            <p></p>
             <div id="download-scroll-point"></div>
             <h1>Want to Play?</h1>
             <p>Our game isn't ready yet, but when it is you can</p>
-            <p>download our game using the links below.</p>
+            <p style="transform: translateY(-150%)">download our game using the links below.</p>
             <div id="download">
-                <div class="button">
+                <div class="download-button">
                     <i class="fa-brands fa-itch-io"></i>
                     <a href="https://www.google.com" target="_blank">ITCH.IO</a>
                 </div>
-                <div class="button">
+                <div class="download-button">
                     <i class="fa-brands fa-steam-symbol"></i>
                     <a href="https://www.google.com" target="_blank">STEAM</a>
                 </div>
-                <div class="button">
+                <div class="download-button">
                     <svg class="inline align-middle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M 8 4 L 8 6 L 7 6 L 7 8 L 6 8 L 6 10 L 5 10 L 5 12 L 4 12 L 4 14 L 10 14 L 10 16 L 9 16 L 9 17 L 9 18 L 8 18 L 8 20 L 9 20 L 9 19 L 10 19 L 10 18 L 11 18 L 11 17 L 12 17 L 12 16 L 13 16 L 13 15 L 14 15 L 14 14 L 15 14 L 15 13 L 16 13 L 16 12 L 17 12 L 17 11 L 18 11 L 18 10 L 19 10 L 19 9 L 16 9 L 16 8 L 17 8 L 17 7 L 18 7 L 18 6 L 19 6 L 19 5 L 20 5 L 20 4 L 8 4 z M 8 20 L 7 20 L 7 21 L 8 21 L 8 20 z M 9 6 L 16 6 L 16 7 L 15 7 L 15 8 L 14 8 L 14 9 L 13 9 L 13 10 L 12 10 L 12 11 L 13 11 L 13 12 L 14 12 L 14 11 L 15 11 L 15 12 L 14 12 L 14 13 L 13 13 L 13 12 L 12 12 L 12 11 L 11 11 L 11 12 L 10 12 L 10 11 L 9 11 L 9 12 L 8 12 L 8 11 L 7 11 L 7 10 L 8 10 L 8 8 L 9 8 L 9 6 z M 8 10 L 8 11 L 9 11 L 9 10 L 8 10 z M 10 11 L 11 11 L 11 10 L 10 10 L 10 11 z"></path>
                     </svg>
                     <a href="https://www.google.com" target="_blank">GAMEJOLT</a>
                 </div>
-                <div class="button">
+                <div class="download-button">
                     <i class="fa-brands fa-github"></i>
                     <a href="https://www.google.com" target="_blank">GITHUB</a>
                 </div>
@@ -132,9 +129,9 @@
 <div id="team">
     <div class="container">
         <div class="content">
-            <h1>Meet the Team</h1>
-            <p>Want to get in touch?</p>
-            <p>Contact through <span class="italic">LinkedIn</span> or another social down below!</p>
+            <h1 style="margin-top:200px;">Meet the Team</h1>
+            <p class="italic">Want to get in touch?</p>
+            <p style="transform: translateY(-150%)">Contact through <span class="italic">LinkedIn</span> or another social down below!</p>
 
             <div class="team-grid">
                 <div id="team-contacts"></div>
@@ -152,11 +149,10 @@
         <p class="copyright">© Copyright Caffiend Games 2024 All Rights Reserved.</p>
         <p>Developed and Designed by Riley Daigle and Jada Gordon.</p>
         <p class="copyright">Sprites and Portraits created by Chris Cowan.</p>
-        <p>Written in Webstorm, using TypeScript, Scss, Tailwind, and React.</p>
+        <p>Written in Webstorm, using TypeScript, Scss, and React.</p>
     </div>
 </div>
 
-<script type="module" src="/src/scripts/landing.tsx"></script>
-<script type="module" src="/src/scripts/team-members.tsx"></script>
+<script type="module" src="src/scripts/landing.tsx"></script>
 </body>
 </html>

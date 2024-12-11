@@ -29,6 +29,7 @@ h1 {
 }
 
 p {
+  font-family: "SUSE", sans-serif;
   max-width: 800px;
 }
 
@@ -64,4 +65,20 @@ p {
   margin: 0 auto;
   height: 600px;
   background: var(--colour-primary);
+}
+
+#games {
+  height: 1200px;
+}
+
+#team {
+    height: 800px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }

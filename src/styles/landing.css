@@ -22,6 +22,7 @@ h1 {
 }
 
 p {
+  font-family: "SUSE", sans-serif;
   max-width: 800px;
 }
 
@@ -55,6 +56,22 @@ p {
   margin: 0 auto;
   height: 600px;
   background: var(--colour-primary);
+}
+
+#games {
+  height: 1200px;
+}
+
+#team {
+  height: 800px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .content {
@@ -180,7 +197,6 @@ p {
 #landing .inline-buttons {
   position: relative;
   display: flex;
-  transform: translateY(50%);
 }
 #landing .inline-buttons .button {
   background: var(--main-accent-colour);
@@ -199,6 +215,7 @@ p {
 }
 #landing p {
   width: 600px;
+  transform: translateY(-50%);
 }
 #landing p span {
   font-style: italic;
@@ -211,7 +228,7 @@ p {
 }
 #landing p, #landing h1, #landing a {
   z-index: 1;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 #landing .content {
   transform: rotateZ(-3deg);
@@ -247,7 +264,7 @@ p {
   right: 0;
   padding: 5px 10px;
   z-index: 20;
-  transform: translate(-10%, -950px);
+  transform: translate(-10%, -250%);
 }
 
 #about-us p {
@@ -271,25 +288,26 @@ p {
   opacity: 50%;
 }
 #games #games-logo {
-  width: 600px;
+  margin-top: 100px;
+  width: 500px;
 }
 #games #download {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#games #download .button {
+#games #download .download-button {
   border: var(--secondary-accent-colour) 10px solid;
-  color: var(--font-primary);
+  color: var(--font-primary) !important;
   font-family: "Jua", sans-serif;
   font-size: 1.25rem;
+  text-decoration: none !important;
   padding: 0.25rem 2rem;
   margin: 1rem;
   border-radius: 100px;
-  text-decoration: none;
   transition: 0.2s;
 }
-#games #download .button:hover {
+#games #download .download-button:hover {
   cursor: pointer;
   transform: scale(1.125);
 }
