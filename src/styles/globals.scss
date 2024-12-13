@@ -72,7 +72,11 @@ p {
 }
 
 #team {
-    height: 800px;
+  height: 1800px;
+
+  .container, .content  {
+    height: 1800px;
+  }
 }
 
 .italic {

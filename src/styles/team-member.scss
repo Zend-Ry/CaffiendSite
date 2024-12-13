@@ -1,8 +1,7 @@
 .team-grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  border: 2px solid var(--main-accent-colour);
 }
 
 .team-member {
@@ -10,19 +9,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 50px;
-  padding: 20px;
+  margin: 15px 50px;
+  padding: 25px;
   width: 300px;
   height: 400px;
+  font-family: "SUSE", sans-serif;
 
   img {
     border: var(--main-accent-colour) 15px solid;
     border-radius: 30px;
+    width: 250px;
   }
 
   .socials {
     display: flex;
-    flex-direction: row;
     transform: translateY(-40px);
   }
 
@@ -32,12 +32,27 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+  }
+
+  h2
+  {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+
+    transform: translateY(-5px);
+  }
+
+  h3
+  {
+    font-size: 1rem;
+
+    transform: translateY(-15px);
   }
 }
 
 #team-contacts, #team-artists, #team-programmers {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
@@ -49,6 +64,7 @@
   text-align: center;
   background: var(--secondary-accent-colour);
   padding: 0 25px;
+  height: 75px;
   border-radius: 100px;
   transform: translateY(-40px);
 }

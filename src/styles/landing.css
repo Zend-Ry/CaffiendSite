@@ -63,7 +63,10 @@ p {
 }
 
 #team {
-  height: 800px;
+  height: 1800px;
+}
+#team .container, #team .content {
+  height: 1800px;
 }
 
 .italic {
@@ -301,7 +304,6 @@ p {
   color: var(--font-primary) !important;
   font-family: "Jua", sans-serif;
   font-size: 1.25rem;
-  text-decoration: none !important;
   padding: 0.25rem 2rem;
   margin: 1rem;
   border-radius: 100px;
@@ -310,6 +312,10 @@ p {
 #games #download .download-button:hover {
   cursor: pointer;
   transform: scale(1.125);
+}
+#games #download .download-button a {
+  color: var(--font-secondary);
+  text-decoration: none !important;
 }
 #games #download .icon {
   display: inline-block;

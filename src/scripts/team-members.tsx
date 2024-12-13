@@ -17,7 +17,7 @@ function TeamMembers(props: TeamMemberData) {
             props.website ? createElement('a', {
                 href: props.website,
                 target: "_blank",
-                className: 'Website'
+                className: 'Website',
             }, createElement('i', {className: 'fa-solid fa-globe'})) : null,
             props.linkedin ? createElement('a', {
                 href: props.linkedin,
@@ -47,19 +47,22 @@ for (let i = 0; i <= 3; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
 }
 // Artists
 for (let i = 4; i <= 6; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('team-artists').appendChild(teamMember); // This is not working, I don't know why
 }
 // Programmers
 for (let i = 7; i <= teamMembers.length; i++) {
     let teamMember = document.createElement('div' + i);
     let root = ReactDOM.createRoot(teamMember);
     root.render(TeamMembers(teamMembers[i]));
-    //document.getElementById('team-contacts').appendChild(teamMember); // This is not working, I don't know why
+    // @ts-ignore: Object is possibly 'null'.
+    document.getElementById('team-programmers').appendChild(teamMember); // This is not working, I don't know why
 }
