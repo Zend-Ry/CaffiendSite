@@ -35,5 +35,13 @@
     transform: rotate(0deg);
   }
 }
+@keyframes scroll {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 /*# sourceMappingURL=animations.css.map */

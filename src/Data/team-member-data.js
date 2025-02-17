@@ -1,4 +1,7 @@
-export let teamMembers = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.teamMembers = void 0;
+exports.teamMembers = [
     {
         name: "Toby Pinhey",
         title: "Art Contact",
@@ -9,7 +12,7 @@ export let teamMembers = [
     {
         name: "Riley Daigle",
         title: "Design Contact",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         website: "https://rileydaigle.com/",
         linkedin: "https://www.linkedin.com/in/riley-daigle-1799bb251/",
         instagram: "https://www.instagram.com/riley.cc.daigle/",
@@ -19,27 +22,27 @@ export let teamMembers = [
     {
         name: "James Lilley",
         title: "Programming Contact",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "https://www.linkedin.com/in/james-lilley-20726a339/",
         github: "https://github.com/L0043"
     },
     {
         name: "Seth Gaga-a",
         title: "Communications Contact",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         github: "https://github.com/TheDarKSh0t"
     },
     {
         name: "Chris Cowan",
         title: "Artist",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         artStation: "",
     },
     {
         name: "Jada Gordon",
         title: "Artist",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         instagram: "https://www.instagram.com/ennajada/",
         artStation: "",
@@ -47,7 +50,7 @@ export let teamMembers = [
     {
         name: "Roaa Almadi",
         title: "Artist",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "https://www.linkedin.com/in/roaa-almadi",
         instagram: "https://www.instagram.com/Roaa.Almadi/",
         artStation: "https://www.artstation.com/roaa-072",
@@ -55,28 +58,28 @@ export let teamMembers = [
     {
         name: "Ari Hawes",
         title: "Programmer",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         github: "https://github.com/wholivesinapineappleunderthesea",
     },
     {
         name: "Mason Frazer",
         title: "Programmer",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         github: "https://github.com/Ph0don",
     },
     {
         name: "Zoe Sharp",
         title: "Programmer",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         github: "https://github.com/Zobotical",
     },
     {
         name: "Ben Symons",
         title: "Programmer",
-        imageUrl: "",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "https://www.linkedin.com/in/ben-symons-2ba415339/",
         github: "https://github.com/BSymons74",
     },

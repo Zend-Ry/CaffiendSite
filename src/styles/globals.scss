@@ -58,7 +58,7 @@ p {
   z-index: 10;
 }
 
-.container, #landing, #about-us, #games, #gallery, #team{
+.container, #landing, #about-us, #games, #team{
   display: flex;
   justify-content: center;
 
@@ -67,15 +67,35 @@ p {
   background: var(--colour-primary);
 }
 
+#about-us {
+  height: 900px;
+
+    .container, .content  {
+        height: 800px;
+    }
+}
+
 #games {
-  height: 1200px;
+  height: 1600px;
+
+  .container, .content  {
+    height: 1600px;
+  }
+}
+
+#gallery {
+  height: 1500px;
+
+  .container, .content  {
+    height: 1500px;
+  }
 }
 
 #team {
-  height: 1800px;
+  height: 2300px;
 
   .container, .content  {
-    height: 1800px;
+    height: 2300px;
   }
 }
 

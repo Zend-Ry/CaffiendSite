@@ -50,7 +50,7 @@ p {
   z-index: 10;
 }
 
-.container, #landing, #about-us, #games, #gallery, #team {
+.container, #landing, #about-us, #games, #team {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -58,15 +58,32 @@ p {
   background: var(--colour-primary);
 }
 
+#about-us {
+  height: 900px;
+}
+#about-us .container, #about-us .content {
+  height: 800px;
+}
+
 #games {
-  height: 1200px;
+  height: 1600px;
+}
+#games .container, #games .content {
+  height: 1600px;
+}
+
+#gallery {
+  height: 1500px;
+}
+#gallery .container, #gallery .content {
+  height: 1500px;
 }
 
 #team {
-  height: 1800px;
+  height: 2300px;
 }
 #team .container, #team .content {
-  height: 1800px;
+  height: 2300px;
 }
 
 .italic {
@@ -169,12 +186,12 @@ p {
 }
 #landing #hero-logo {
   position: absolute;
-  transform: translate(-70%, -60%) rotateZ(-9deg);
+  transform: translate(-70%, -80%) rotateZ(-9deg);
   width: 450px;
   transition: 0.2s;
 }
 #landing #hero-logo:hover {
-  transform: translate(-70%, -60%) rotateZ(-9deg) scale(1.025);
+  transform: translate(-70%, -80%) rotateZ(-9deg) scale(1.025);
 }
 #landing #hero-art-left, #landing #hero-art-right {
   position: absolute;
@@ -281,18 +298,25 @@ p {
   height: 400px;
   opacity: 60%;
 }
+#about-us #team-photo {
+  width: 600px;
+}
 
 #games #games-coffee-stain {
   position: absolute;
   right: 0;
-  transform: translate(100px, 90px) rotateZ(-80deg);
+  transform: translate(100px, 400px) rotateZ(-80deg);
   width: 600px;
   height: 600px;
   opacity: 50%;
 }
 #games #games-logo {
-  margin-top: 100px;
-  width: 500px;
+  width: 800px;
+  transform: translateY(-50px);
+  transition: 0.3s;
+}
+#games #games-logo:hover {
+  transform: translateY(-50px) scale(1.125);
 }
 #games #download {
   display: flex;
@@ -319,6 +343,62 @@ p {
 }
 #games #download .icon {
   display: inline-block;
+}
+#games .isp {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  transition: 0.2s;
+}
+#games .isp .isp-art {
+  width: 300px;
+  transition: 0.2s;
+}
+#games .isp .isp-art:hover {
+  transform: scale(1.125);
+}
+#games .isp .left {
+  margin-right: 50px;
+}
+#games .isp .right {
+  margin-left: 50px;
+}
+#games .isp .isp-info {
+  width: 500px;
+  text-align: justify;
+  transition: 0.3s;
+}
+#games .isp .isp-info:hover {
+  transform: scale(1.025);
+}
+#games .isp .isp-info h1 {
+  font-size: 2rem;
+}
+#games .isp:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+#carouselA .wrapper, #carouselB .wrapper, #carouselC .wrapper {
+  display: flex;
+  overflow: hidden;
+}
+#carouselA .wrapper .carousel-slide, #carouselB .wrapper .carousel-slide, #carouselC .wrapper .carousel-slide {
+  display: flex;
+  animation: scroll 71s infinite linear;
+}
+#carouselA .wrapper .carousel-slide .carousel-item, #carouselB .wrapper .carousel-slide .carousel-item, #carouselC .wrapper .carousel-slide .carousel-item {
+  padding: 10px 10px;
+}
+
+#carouselB .wrapper .carousel-slide {
+  animation: scroll 69s infinite linear reverse;
+  animation-delay: -27s;
+}
+
+#carouselC .wrapper .carousel-slide {
+  animation: scroll 75s infinite linear;
+  animation-delay: -20s;
 }
 
 /*# sourceMappingURL=landing.css.map */

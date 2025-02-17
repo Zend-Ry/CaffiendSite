@@ -35,13 +35,6 @@ export let teamMembers: TeamMemberData[] = [
         github: "https://github.com/L0043"
     },
     {
-        name: "Seth Gaga-a",
-        title: "Communications Contact",
-        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
-        linkedin: "",
-        github: "https://github.com/TheDarKSh0t"
-    },
-    {
         name: "Chris Cowan",
         title: "Artist",
         imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
@@ -90,5 +83,12 @@ export let teamMembers: TeamMemberData[] = [
         imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "https://www.linkedin.com/in/ben-symons-2ba415339/",
         github: "https://github.com/BSymons74",
+    },
+    {
+        name: "Seth Gaga-a",
+        title: "Communications Contact",
+        imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
+        linkedin: "",
+        github: "https://github.com/TheDarKSh0t"
     },
 ];

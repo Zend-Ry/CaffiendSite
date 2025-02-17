@@ -104,13 +104,15 @@
     width: 900px;
     border-radius: 25px;
   }
+
   #hero-logo {
     position: absolute;
-    transform: translate(-70%, -60%) rotateZ(-9deg);
+    transform: translate(-70%, -80%) rotateZ(-9deg);
     width: 450px;
     transition: 0.2s;
+
     &:hover {
-      transform: translate(-70%, -60%) rotateZ(-9deg) scale(1.025);
+      transform: translate(-70%, -80%) rotateZ(-9deg) scale(1.025);
     }
   }
 
@@ -178,6 +180,7 @@
   h1 {
     padding-top: 5rem;
   }
+
   p, h1, a {
     z-index: 1;
     margin-left: 100px;
@@ -246,6 +249,10 @@
 
     opacity: 60%;
   }
+
+  #team-photo {
+    width: 600px;
+  }
 }
 
 // Games
@@ -254,7 +261,7 @@
   #games-coffee-stain {
     position: absolute;
     right: 0;
-    transform: translate(100px, 90px) rotateZ(-80deg);
+    transform: translate(100px, 400px) rotateZ(-80deg);
 
     width: 600px;
     height: 600px;
@@ -263,8 +270,13 @@
   }
 
   #games-logo {
-    margin-top: 100px;
-    width: 500px;
+    width: 800px;
+    transform: translateY(-50px);
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-50px) scale(1.125);
+    }
   }
 
   #download {
@@ -296,6 +308,85 @@
 
     .icon {
       display: inline-block;
+    }
+  }
+
+  .isp {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    transition: 0.2s;
+
+    .isp-art {
+      width: 300px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.125);
+      }
+    }
+
+    .left {
+      margin-right: 50px;
+    }
+
+    .right {
+      margin-left: 50px;
+    }
+
+    .isp-info {
+      width: 500px;
+      text-align: justify;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.025);
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.025);
+    }
+  }
+}
+
+// Gallery
+#carouselA, #carouselB, #carouselC {
+
+  .wrapper {
+    display: flex;
+    overflow: hidden;
+
+    .carousel-slide {
+      display: flex;
+      animation: scroll 71s infinite linear;
+
+      .carousel-item {
+        padding: 10px 10px;
+      }
+    }
+  }
+}
+
+#carouselB {
+  .wrapper {
+    .carousel-slide {
+      animation: scroll 69s infinite linear reverse;
+        animation-delay: -27s;
+    }
+  }
+}
+
+#carouselC {
+  .wrapper {
+    .carousel-slide {
+      animation: scroll 75s infinite linear;
+      animation-delay: -20s;
     }
   }
 }
