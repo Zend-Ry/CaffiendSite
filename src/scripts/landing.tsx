@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import { createRoot } from "react-dom/client";
-import { CarouselData, carouselList } from "../Data/carousel-data.ts";
-import { TeamMemberData, teamMembers } from "../Data/team-member-data.ts";
+import { CarouselData, carouselList } from "../Data/carousel-data.js";
+import { TeamMemberData, teamMembers } from "../Data/team-member-data.js";
 
 import '../styles/landing.css';
 import '../styles/team-member.css';
