@@ -27,5 +27,7 @@
   },
   "include": ["**/*"],
   "exclude": ["node_modules"],
-  "files": ["src/scripts/landing.tsx"]
+  "files": [
+    "src/scripts/landing.ts"
+  ]
 }
