@@ -86,7 +86,7 @@ export let teamMembers: TeamMemberData[] = [
     },
     {
         name: "Seth Gaga-a",
-        title: "Communications Contact",
+        title: "Programmer",
         imageUrl: "https://www.pngkey.com/png/full/349-3499617_person-placeholder-person-placeholder.png",
         linkedin: "",
         github: "https://github.com/TheDarKSh0t"

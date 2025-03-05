@@ -6,7 +6,6 @@ import { TeamMemberData, teamMembers } from "../Data/team-member-data.js";
 import '../styles/landing.css';
 import '../styles/team-member.css';
 
-
 // ----------------- Carousel -----------------
 
 function CreateCarousel(props: CarouselData[], start: number, end: number) {
@@ -49,7 +48,7 @@ document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
 <div id="navigation" class="hf-sizing">
     <div class="content">
             <div>
-                <img id="logo" src="../src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
+                <img id="logo" src="/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
             </div>
             <div id="nav">
                 <a class="nav-link" href="#about-us">About Us</a>
