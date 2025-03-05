@@ -1,5 +1,5 @@
-import { createElement } from "react";
-import { createRoot } from "react-dom/client";
+import { createElement } from "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.j";
+import { createRoot } from "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js";
 import { carouselList } from "../Data/carousel-data.js";
 import { teamMembers } from "../Data/team-member-data.js";
 import '../styles/landing.css';
