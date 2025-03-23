@@ -8253,7 +8253,7 @@ var La = Um(), ec = [{
 }, {
     name: "Roaa Almadi",
     title: "Artist",
-    imageUrl: "assets/WebsitePortrait.png",
+    imageUrl: "assets/RoaaProfile.png",
     linkedin: "https://www.linkedin.com/in/roaa-almadi",
     instagram: "https://www.instagram.com/Roaa.Almadi/",
     artStation: "https://www.artstation.com/roaa-072"
