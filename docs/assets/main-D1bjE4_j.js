@@ -8152,81 +8152,81 @@ function Um() {
 var La = Um(), ec = [{
     title: "DinoTPose",
     description: "The main Character of the game, T-Posing",
-    imageUrl: "../../docs/assets/Screenshots/Dino_TPose.png"
+    imageUrl: "Screenshots/Dino_TPose.png"
 }, {
     title: "DinerInterior",
     description: "The interior of the diner",
-    imageUrl: "../../docs/assets/Screenshots/InGame_Diner.png"
+    imageUrl: "Screenshots/InGame_Diner.png"
 }, {
     title: "DinerKitchen",
     description: "The kitchen of the diner",
-    imageUrl: "../../docs/assets/Screenshots/InGame_Kitchen.png"
+    imageUrl: "Screenshots/InGame_Kitchen.png"
 }, {
     title: "Diner Lighting",
     description: "The lighting of the diner",
-    imageUrl: "../../docs/assets/Screenshots/InGame_Lighting.png"
+    imageUrl: "Screenshots/InGame_Lighting.png"
 }, {
     title: "InitialSketch",
     description: "The initial sketch of the game characters",
-    imageUrl: "../../docs/assets/Screenshots/InitialSketch.png"
+    imageUrl: "Screenshots/InitialSketch.png"
 }, {
     title: "IcyMap",
     description: "An icy map in the game",
-    imageUrl: "../../docs/assets/Screenshots/Map_Icy.png"
+    imageUrl: "Screenshots/Map_Icy.png"
 }, {
     title: "TrappedTreasure",
     description: "A treasure chest in the game",
-    imageUrl: "../../docs/assets/Screenshots/Map_Treasure.png"
+    imageUrl: "Screenshots/Map_Treasure.png"
 }, {
     title: "BoneModel",
     description: "A model of creature bones",
-    imageUrl: "../../docs/assets/Screenshots/Models_Bones.png"
+    imageUrl: "Screenshots/Models_Bones.png"
 }, {
     title: "PillarConcept",
     description: "A concept of a pillar in the game",
-    imageUrl: "../../docs/assets/Screenshots/Pillars_Concpt.png"
+    imageUrl: "Screenshots/Pillars_Concpt.png"
 }, {
     title: "Lemonade",
     description: "A lemonade prop model",
-    imageUrl: "../../docs/assets/Screenshots/Prop_Lemonade.png"
+    imageUrl: "Screenshots/Prop_Lemonade.png"
 }, {
     title: "RemiMeme",
     description: "A meme of the game character",
-    imageUrl: "../../docs/assets/Screenshots/Remi_Meme.png"
+    imageUrl: "Screenshots/Remi_Meme.png"
 }, {
     title: "SavoryRoomConcept",
     description: "A concept of a room in the game",
-    imageUrl: "../../docs/assets/Screenshots/Savory_Concept.png"
+    imageUrl: "Screenshots/Savory_Concept.png"
 }, {
     title: "TexturedScarecrow",
     description: "A textured scarecrow model",
-    imageUrl: "../../docs/assets/Screenshots/Scarecrow_Textured.png"
+    imageUrl: "Screenshots/Scarecrow_Textured.png"
 }, {
     title: "TexturedSnail",
     description: "A textured snail model",
-    imageUrl: "../../docs/assets/Screenshots/Snail_Textured.png"
+    imageUrl: "Screenshots/Snail_Textured.png"
 }, {
     title: "SourConcept",
     description: "A concept of a room in the game",
-    imageUrl: "../../docs/assets/Screenshots/Sour_Concept.png"
+    imageUrl: "Screenshots/Sour_Concept.png"
 }, {
     title: "SpicyConcept",
     description: "A concept of a room in the game",
-    imageUrl: "../../docs/assets/Screenshots/Spicy_Concept.png"
+    imageUrl: "Screenshots/Spicy_Concept.png"
 }, {
     title: "StyleGuide",
     description: "The style guide of the game",
-    imageUrl: "../../docs/assets/Screenshots/StyleGuide.png"
+    imageUrl: "Screenshots/StyleGuide.png"
 }], Oe = [{
     name: "Toby Pinhey",
     title: "Art Contact",
-    imageUrl: "../../src/assets/Headshots/TobyProfile.png",
+    imageUrl: "Headshots/TobyProfile.png",
     linkedin: "https://www.linkedin.com/in/toby-pinhey-567272339/",
     artStation: "https://www.artstation.com/tobsyturvy"
 }, {
     name: "Riley Daigle",
     title: "Design Contact",
-    imageUrl: "../../src/assets/Headshots/RileyProfile.png",
+    imageUrl: "Headshots/RileyProfile.png",
     website: "https://rileydaigle.com/",
     linkedin: "https://www.linkedin.com/in/riley-daigle-1799bb251/",
     instagram: "https://www.instagram.com/riley.cc.daigle/",
@@ -8235,56 +8235,56 @@ var La = Um(), ec = [{
 }, {
     name: "James Lilley",
     title: "Programming Contact",
-    imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+    imageUrl: "Headshots/WebsitePortrait.png",
     linkedin: "https://www.linkedin.com/in/james-lilley-20726a339/",
     github: "https://github.com/L0043"
 }, {
     name: "Chris Cowan",
     title: "Artist",
-    imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+    imageUrl: "Headshots/WebsitePortrait.png",
     artStation: ""
 }, {
     name: "Jada Gordon",
     title: "Artist",
-    imageUrl: "../../src/assets/Headshots/JadaProfile.jpeg",
+    imageUrl: "Headshots/JadaProfile.jpeg",
     linkedin: "",
     instagram: "https://www.instagram.com/ennajada/",
     artStation: ""
 }, {
     name: "Roaa Almadi",
     title: "Artist",
-    imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+    imageUrl: "Headshots/WebsitePortrait.png",
     linkedin: "https://www.linkedin.com/in/roaa-almadi",
     instagram: "https://www.instagram.com/Roaa.Almadi/",
     artStation: "https://www.artstation.com/roaa-072"
 }, {
     name: "Ari Hawes",
     title: "Programmer",
-    imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+    imageUrl: "Headshots/WebsitePortrait.png",
     linkedin: "https://www.linkedin.com/in/ari-hawes-844142256/",
     github: "https://github.com/wholivesinapineappleunderthesea"
 }, {
     name: "Mason Frazer",
     title: "Programmer",
-    imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+    imageUrl: "Headshots/WebsitePortrait.png",
     linkedin: "",
     github: "https://github.com/Ph0don"
 }, {
     name: "Zoe Sharp",
     title: "Programmer",
-    imageUrl: "../../src/assets/Headshots/ZoeProfile.png",
+    imageUrl: "Headshots/ZoeProfile",
     linkedin: "https://www.linkedin.com/in/zoe-gb-sharp/",
     github: "https://github.com/Zobotical"
 }, {
     name: "Ben Symons",
     title: "Programmer",
-    imageUrl: "../../src/assets/Headshots/BenProfile.jpg",
+    imageUrl: "Headshots/BenProfile.jpg",
     linkedin: "https://www.linkedin.com/in/ben-symons-2ba415339/",
     github: "https://github.com/BSymons74"
 }, {
     name: "Seth Gaga-a",
     title: "Programmer",
-    imageUrl: "../../src/assets/Headshots/SethProfile.png",
+    imageUrl: "Headshots/SethProfile.png",
     linkedin: "https://www.linkedin.com/in/seth-gaga-a-0b2743305/",
     github: "https://github.com/TheDarKSh0t"
 }];
@@ -8311,7 +8311,7 @@ document.querySelector("#navigation").innerHTML = `
 <div id="navigation-desktop" class="hf-sizing">
     <div class="content">
             <div>
-                <img id="logo" src="../../src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
+                <img id="logo" src="Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
             </div>
             <div id="nav">
                 <a class="nav-link" href="#about-us">About Us</a>
@@ -8326,7 +8326,7 @@ document.querySelector("#navigation").innerHTML = `
 <div id="navigation-mobile" class="hf-sizing">
     <div class="content">
         <div>
-            <img id="logo" src="../../src/assets/Logo-Caffiend-Mobile.png" alt="Caffiend Games logo"/>
+            <img id="logo" src="Logo-Caffiend-Mobile.png" alt="Caffiend Games logo"/>
         </div>
         <div id="hamburger-menu">
             <i class="fa-solid fa-bars fa-2xl"></i>
