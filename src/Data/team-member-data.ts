@@ -59,7 +59,7 @@ export let teamMembers: TeamMemberData[] = [
     {
         name: "Ari Hawes",
         title: "Programmer",
-        imageUrl: "../../src/assets/Headshots/WebsitePortrait.png",
+        imageUrl: "../../src/assets/Headshots/AriProfile.png",
         linkedin: "https://www.linkedin.com/in/ari-hawes-844142256/",
         github: "https://github.com/wholivesinapineappleunderthesea",
     },
