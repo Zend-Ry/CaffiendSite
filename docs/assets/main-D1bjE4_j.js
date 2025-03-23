@@ -8272,7 +8272,7 @@ var La = Um(), ec = [{
 }, {
     name: "Zoe Sharp",
     title: "Programmer",
-    imageUrl: "assets/ZoeProfile",
+    imageUrl: "assets/ZoeProfile.png",
     linkedin: "https://www.linkedin.com/in/zoe-gb-sharp/",
     github: "https://github.com/Zobotical"
 }, {
@@ -8311,7 +8311,7 @@ document.querySelector("#navigation").innerHTML = `
 <div id="navigation-desktop" class="hf-sizing">
     <div class="content">
             <div>
-                <img id="logo" src="../../src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
+                <img id="logo" src="assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
             </div>
             <div id="nav">
                 <a class="nav-link" href="#about-us">About Us</a>
@@ -8326,7 +8326,7 @@ document.querySelector("#navigation").innerHTML = `
 <div id="navigation-mobile" class="hf-sizing">
     <div class="content">
         <div>
-            <img id="logo" src="../../src/assets/Logo-Caffiend-Mobile.png" alt="Caffiend Games logo"/>
+            <img id="logo" src="assets/Logo-Caffiend-Mobile.png" alt="Caffiend Games logo"/>
         </div>
         <div id="hamburger-menu">
             <i class="fa-solid fa-bars fa-2xl"></i>
