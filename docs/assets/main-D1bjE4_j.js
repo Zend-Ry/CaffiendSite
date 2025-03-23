@@ -8393,7 +8393,7 @@ for (var Xl = 6; Xl <= 8; Xl++) {
     var bt = document.createElement("div"), xa = La.createRoot(bt);
     xa.render(jn(Oe[Xl])), document.getElementById("team-programmers-1").appendChild(bt)
 }
-for (var Xl = 9; Xl <= Oe.length; Xl++) {
+for (var Xl = 9; Xl <= 10; Xl++) {
     var bt = document.createElement("div"), xa = La.createRoot(bt);
     xa.render(jn(Oe[Xl])), document.getElementById("team-programmers-2").appendChild(bt)
 }
