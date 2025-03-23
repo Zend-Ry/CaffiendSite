@@ -67,42 +67,113 @@ p {
   background: var(--colour-primary);
 }
 
-#about-us {
-  height: 900px;
-
-    .container, .content  {
-        height: 800px;
-    }
-}
-
-#games {
-  height: 1600px;
-
-  .container, .content  {
-    height: 1600px;
-  }
-}
-
-#gallery {
-  height: 1500px;
-
-  .container, .content  {
-    height: 1500px;
-  }
-}
-
-#team {
-  height: 2300px;
-
-  .container, .content  {
-    height: 2300px;
-  }
-}
-
 .italic {
     font-style: italic;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 768px) {
+#landing {
+    height: 800px;
+
+    .container, .content  {
+      height: 800px;
+    }
+  }
+
+  #about-us {
+    height: 1000px;
+
+    .container, .content  {
+      height: 1000px;
+    }
+
+    h1 {
+      z-index: 1;
+    }
+  }
+
+  #games {
+    height: 2600px;
+
+    .container, .content  {
+      height: 2600px;
+    }
+  }
+
+  #gallery {
+    height: 1050px;
+
+    .container, .content  {
+      height: 1050px;
+    }
+  }
+
+  #team {
+    height: 6000px;
+
+    .container, .content  {
+      height: 6000px;
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  #about-us {
+    height: 900px;
+
+    .container, .content  {
+      height: 800px;
+    }
+  }
+
+  #games {
+    height: 1600px;
+
+    .container, .content  {
+      height: 1600px;
+    }
+  }
+
+  #gallery {
+    height: 1600px;
+
+    .container, .content  {
+      height: 1600px;
+    }
+  }
+
+  #team {
+    height: 6000px;
+
+    .container, .content  {
+      height: 6000px;
+    }
+  }
+}
+@media only screen and (min-width: 1025px){
+
+  #gallery {
+    height: 1500px;
+
+    .container, .content  {
+      height: 1500px;
+    }
+  }
+
+  #team {
+    height: 2300px;
+
+    .container, .content  {
+      height: 2300px;
+    }
+  }
 }

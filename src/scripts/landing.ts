@@ -30,12 +30,12 @@ rootA.render(CreateCarousel(carouselList, 0, 5));
 document.getElementById('carouselA')!.appendChild(carouselA);
 let carouselB = document.createElement('div');
 let rootB = createRoot(carouselB);
-rootB.render(CreateCarousel(carouselList, 0, 5));
+rootB.render(CreateCarousel(carouselList, 6, 11));
 // @ts-ignore: Object is possibly 'null'.
 document.getElementById('carouselB')!.appendChild(carouselB);
 let carouselC = document.createElement('div');
 let rootC = createRoot(carouselC);
-rootC.render(CreateCarousel(carouselList, 0, 5));
+rootC.render(CreateCarousel(carouselList, 12, 17));
 // @ts-ignore: Object is possibly 'null'.
 document.getElementById('carouselC')!.appendChild(carouselC);
 
@@ -45,10 +45,10 @@ document.getElementById('carouselC')!.appendChild(carouselC);
 // ----------------- Navigation -----------------
 
 document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
-<div id="navigation" class="hf-sizing">
+<div id="navigation-desktop" class="hf-sizing">
     <div class="content">
             <div>
-                <img id="logo" src="/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
+                <img id="logo" src="../src/assets/Logo-Caffiend-Desktop.png" alt="Caffiend Games logo"/>
             </div>
             <div id="nav">
                 <a class="nav-link" href="#about-us">About Us</a>
@@ -59,7 +59,42 @@ document.querySelector<HTMLDivElement>('#navigation')!.innerHTML = `
             </div>
     </div>
 </div>
+
+<div id="navigation-mobile" class="hf-sizing">
+    <div class="content">
+        <div>
+            <img id="logo" src="../src/assets/Logo-Caffiend-Mobile.png" alt="Caffiend Games logo"/>
+        </div>
+        <div id="hamburger-menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+    </div>
+    <div id="mobile-nav-links">
+        <a class="nav-mobile alt-color" href="#about-us">About Us</a>
+        <a class="nav-mobile" href="#games">Games</a>
+        <a class="nav-mobile alt-color" href="#download-scroll-point">Download</a>
+        <a class="nav-mobile" href="#gallery">Gallery</a>
+        <a class="nav-mobile alt-color" href="#team">Team</a>
+    </div>  
+</div>
 `;
+
+document.getElementById("hamburger-menu")!.addEventListener("click", toggleMenu, false);
+document.getElementById("mobile-nav-links")!.addEventListener("click", closeMenu, false);
+
+function toggleMenu() {
+    let nav = document.getElementById("navigation")!;
+    if (nav.style.height === "625px") {
+        nav.style.height = "150px";
+    } else {
+        nav.style.height = "625px";
+    }
+}
+
+function closeMenu() {
+    let nav = document.getElementById("navigation")!;
+    nav.style.height = "150px";
+}
 
 // ----------------- Team Members -----------------
 

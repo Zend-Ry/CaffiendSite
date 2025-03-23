@@ -21,17 +21,32 @@ rootA.render(CreateCarousel(carouselList, 0, 5));
 document.getElementById('carouselA').appendChild(carouselA);
 var carouselB = document.createElement('div');
 var rootB = createRoot(carouselB);
-rootB.render(CreateCarousel(carouselList, 0, 5));
+rootB.render(CreateCarousel(carouselList, 6, 11));
 // @ts-ignore: Object is possibly 'null'.
 document.getElementById('carouselB').appendChild(carouselB);
 var carouselC = document.createElement('div');
 var rootC = createRoot(carouselC);
-rootC.render(CreateCarousel(carouselList, 0, 5));
+rootC.render(CreateCarousel(carouselList, 12, 17));
 // @ts-ignore: Object is possibly 'null'.
 document.getElementById('carouselC').appendChild(carouselC);
 // Slowly scroll the carousel to the right allowing it to go off-screen and wrap back around
 // ----------------- Navigation -----------------
-document.querySelector('#navigation').innerHTML = "\n<div id=\"navigation\" class=\"hf-sizing\">\n    <div class=\"content\">\n            <div>\n                <img id=\"logo\" src=\"/assets/Logo-Caffiend-Desktop.png\" alt=\"Caffiend Games logo\"/>\n            </div>\n            <div id=\"nav\">\n                <a class=\"nav-link\" href=\"#about-us\">About Us</a>\n                <a class=\"nav-link\" href=\"#games\">Games</a>\n                <a class=\"nav-link\" href=\"#download-scroll-point\">Download</a>\n                <a class=\"nav-link\" href=\"#gallery\">Gallery</a>\n                <a class=\"nav-link\" href=\"#team\">Team</a>\n            </div>\n    </div>\n</div>\n";
+document.querySelector('#navigation').innerHTML = "\n<div id=\"navigation-desktop\" class=\"hf-sizing\">\n    <div class=\"content\">\n            <div>\n                <img id=\"logo\" src=\"../src/assets/Logo-Caffiend-Desktop.png\" alt=\"Caffiend Games logo\"/>\n            </div>\n            <div id=\"nav\">\n                <a class=\"nav-link\" href=\"#about-us\">About Us</a>\n                <a class=\"nav-link\" href=\"#games\">Games</a>\n                <a class=\"nav-link\" href=\"#download-scroll-point\">Download</a>\n                <a class=\"nav-link\" href=\"#gallery\">Gallery</a>\n                <a class=\"nav-link\" href=\"#team\">Team</a>\n            </div>\n    </div>\n</div>\n\n<div id=\"navigation-mobile\" class=\"hf-sizing\">\n    <div class=\"content\">\n        <div>\n            <img id=\"logo\" src=\"../src/assets/Logo-Caffiend-Mobile.png\" alt=\"Caffiend Games logo\"/>\n        </div>\n        <div id=\"hamburger-menu\">\n            <i class=\"fa-solid fa-bars fa-2xl\"></i>\n        </div>\n    </div>\n    <div id=\"mobile-nav-links\">\n        <a class=\"nav-mobile alt-color\" href=\"#about-us\">About Us</a>\n        <a class=\"nav-mobile\" href=\"#games\">Games</a>\n        <a class=\"nav-mobile alt-color\" href=\"#download-scroll-point\">Download</a>\n        <a class=\"nav-mobile\" href=\"#gallery\">Gallery</a>\n        <a class=\"nav-mobile alt-color\" href=\"#team\">Team</a>\n    </div>  \n</div>\n";
+document.getElementById("hamburger-menu").addEventListener("click", toggleMenu, false);
+document.getElementById("mobile-nav-links").addEventListener("click", closeMenu, false);
+function toggleMenu() {
+    var nav = document.getElementById("navigation");
+    if (nav.style.height === "625px") {
+        nav.style.height = "150px";
+    }
+    else {
+        nav.style.height = "625px";
+    }
+}
+function closeMenu() {
+    var nav = document.getElementById("navigation");
+    nav.style.height = "150px";
+}
 // ----------------- Team Members -----------------
 function TeamMembers(props) {
     return createElement('div', { className: 'team-member' }, createElement('img', { src: props.imageUrl, alt: "image of " + props.name }), createElement('div', { className: 'info' }, createElement('h2', null, props.name), createElement('h3', null, props.title)), createElement('div', { className: 'socials' }, props.website ? createElement('a', {

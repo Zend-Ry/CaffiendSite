@@ -1,58 +1,156 @@
-.team-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media only screen and (max-width: 1024px) {
+  .team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 25px;
+    padding: 25px;
+    width: 300px;
+    height: 450px;
+    font-family: "SUSE", sans-serif;
+    transition: 0.3s;
+  }
+  .team-member img {
+    border: var(--main-accent-colour) 15px solid;
+    border-radius: 30px;
+    width: 300px;
+  }
+  .team-member .socials {
+    display: flex;
+    transform: translateY(-40px);
+  }
+  .team-member a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    scale: 1.25;
+    margin: 15px;
+  }
+  .team-member h2 {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    transform: translateY(-5px);
+  }
+  .team-member h3 {
+    font-size: 1rem;
+    transform: translateY(-15px);
+  }
+  .team-member:hover {
+    transform: Scale(1.1);
+  }
 }
-
-.team-member {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 15px 50px;
-  padding: 25px;
-  width: 300px;
-  height: 400px;
-  font-family: "SUSE", sans-serif;
-  transition: 0.3s;
+@media only screen and (min-width: 1025px) {
+  .team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 50px;
+    padding: 25px;
+    width: 220px;
+    height: 400px;
+    font-family: "SUSE", sans-serif;
+    transition: 0.3s;
+  }
+  .team-member img {
+    border: var(--main-accent-colour) 15px solid;
+    border-radius: 30px;
+    width: 250px;
+  }
+  .team-member .socials {
+    display: flex;
+    transform: translateY(-40px);
+  }
+  .team-member a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .team-member h2 {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    transform: translateY(-5px);
+  }
+  .team-member h3 {
+    font-size: 1rem;
+    transform: translateY(-15px);
+  }
+  .team-member:hover {
+    transform: Scale(1.1);
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #team-contacts, #team-artists, #team-programmers-1, #team-programmers-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
 }
-.team-member img {
-  border: var(--main-accent-colour) 15px solid;
-  border-radius: 30px;
-  width: 250px;
+@media only screen and (min-width: 1200px) {
+  .team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 50px;
+    padding: 25px;
+    width: 300px;
+    height: 400px;
+    font-family: "SUSE", sans-serif;
+    transition: 0.3s;
+  }
+  .team-member img {
+    border: var(--main-accent-colour) 15px solid;
+    border-radius: 30px;
+    width: 250px;
+  }
+  .team-member .socials {
+    display: flex;
+    transform: translateY(-40px);
+  }
+  .team-member a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .team-member h2 {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    transform: translateY(-5px);
+  }
+  .team-member h3 {
+    font-size: 1rem;
+    transform: translateY(-15px);
+  }
+  .team-member:hover {
+    transform: Scale(1.1);
+  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #team-contacts, #team-artists, #team-programmers-1, #team-programmers-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
 }
-.team-member .socials {
-  display: flex;
-  transform: translateY(-40px);
-}
-.team-member a {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.team-member h2 {
-  font-size: 1.25rem;
-  letter-spacing: 3px;
-  transform: translateY(-5px);
-}
-.team-member h3 {
-  font-size: 1rem;
-  transform: translateY(-15px);
-}
-.team-member:hover {
-  transform: Scale(1.1);
-}
-
-#team-contacts, #team-artists, #team-programmers-1, #team-programmers-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
-
 .info {
   display: block;
   justify-content: center;
