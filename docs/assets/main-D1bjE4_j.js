@@ -8241,7 +8241,7 @@ var La = Um(), ec = [{
 }, {
     name: "Chris Cowan",
     title: "Artist",
-    imageUrl: "assets/WebsitePortrait.png",
+    imageUrl: "assets/ChrisProfile.png",
     artStation: ""
 }, {
     name: "Jada Gordon",
