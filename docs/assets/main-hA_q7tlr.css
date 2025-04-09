@@ -1,4 +1,5 @@
-:root, body {
+
+:root, html, body {
     background: var(--main-accent-colour);
     margin: 0;
     --colour-primary: #f2f2e4;
@@ -13,7 +14,8 @@
     --ArtStation: #13aff0;
     --GitHub: #6e5494;
     max-width: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
+    position: relative;
 }
 
 h1 {
@@ -77,6 +79,14 @@ p {
         height: 800px
     }
 
+    #landing .container .content p {
+        width: 350px;
+    }
+
+    #landing .container .content h1 {
+        text-align: center;
+    }
+
     #about-us, #about-us .container, #about-us .content {
         height: 1000px
     }
@@ -93,6 +103,12 @@ p {
         height: 1050px
     }
 
+    #gallery p {
+        width: 250px;
+        text-align: center;
+        z-index: 1
+    }
+
     #team, #team .container, #team .content {
         height: 6000px
     }
@@ -104,7 +120,7 @@ p {
     }
 
     #about-us .container, #about-us .content {
-        height: 800px
+        height: 900px
     }
 
     #games, #games .container, #games .content, #gallery, #gallery .container, #gallery .content {
@@ -169,13 +185,13 @@ p {
 
     #landing #hero-logo {
         display: block;
-        transform: rotate(-9deg);
+        transform: rotate(-9deg) translateX(-15px);
         width: 500px;
         transition: .2s
     }
 
     #landing #hero-logo:hover {
-        transform: rotate(-9deg) scale(1.025)
+        transform: rotate(-9deg) scale(1.025) translateX(-15px);
     }
 
     #landing #hero-art-left, #landing #hero-art-right {
@@ -207,6 +223,10 @@ p {
     #landing .inline-buttons {
         display: flex;
         flex-direction: column
+    }
+
+    #landing .inline-buttons {
+        width: 425px;
     }
 
     #landing .inline-buttons .button {
@@ -306,13 +326,13 @@ p {
         width: 600px;
         height: 600px;
         opacity: 50%;
-        z-index: 0
+        z-index: 0;
     }
 
     #games #games-logo {
-        width: 85vw;
+        width: 75vw;
         min-width: 500px;
-        transform: translateY(0);
+        transform: translateX(-10px);
         transition: .3s
     }
 
@@ -354,7 +374,7 @@ p {
     }
 
     #games .isp .isp-art {
-        width: 425px;
+        width: 375px;
         transition: .2s
     }
 
@@ -363,7 +383,8 @@ p {
     }
 
     #games .isp .isp-info {
-        width: 400px;
+        width: 350px;
+        transform: translateX(15px);
         text-align: center;
         transition: .3s
     }
@@ -431,6 +452,10 @@ p {
         margin-right: 150px
     }
 
+    #about-us .container .content p {
+        width: 350px;
+    }
+
     #navigation #navigation-mobile #mobile-nav-links {
         display: flex;
         flex-direction: column;
@@ -490,7 +515,7 @@ p {
         color: var(--font-primary);
         background: var(--colour-primary);
         transition: .2s;
-        padding: 5px 2vw;
+        padding: 5px 2vw ;
         margin: .25rem .5rem;
         border: var(--secondary-accent-colour) 10px solid;
         border-radius: 100px
@@ -514,7 +539,7 @@ p {
     #navigation .content {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         width: 100%;
         margin-right: 150px
